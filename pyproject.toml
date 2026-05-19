@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sahel-yields"
+version = "0.1.0"
+description = "Event-study + DiD analysis of Sahel drought-year millet & sorghum yield deviations."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+# Core dependencies — needed for the data + analytic panel layers.
+dependencies = [
+    "pandas",
+    "numpy",
+    "pyarrow",
+    "requests-cache",
+]
+
+[project.optional-dependencies]
+# Spatial + climate stack and the econometric estimators.
+stats = [
+    "geopandas",
+    "xarray",
+    "netCDF4",
+    "h5netcdf",
+    "rasterio",
+    "statsmodels",
+    "linearmodels",
+    "wildboottest",
+]
+# Plotting stack for the static publication-quality figures.
+viz = [
+    "matplotlib",
+    "seaborn",
+]
+dev = [
+    "pytest",
+    "jupyter",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,34 @@
+# --- Raw data: large, re-downloadable, never committed ---
+data/raw/
+
+# --- Scratch / ugly EDA ---
+notebooks/_scratch/
+
+# --- macOS archive artifact (ships inside the EarthStat zip) ---
+__MACOSX/
+
+# --- Derived analytic data ---
+# Large derived files are not committed; the pinned FAOSTAT snapshot IS.
+data/processed/*
+!data/processed/faostat_snapshot_*.parquet
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Env / tooling ---
+.env
+.venv/
+*.cache
+.cache/
+http_cache.sqlite
+
+# --- OS ---
+Thumbs.db
+.DS_Store
