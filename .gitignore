@@ -4,12 +4,17 @@ data/raw/
 # --- Scratch / ugly EDA ---
 notebooks/_scratch/
 
+# --- Local working notes (not part of the published project) ---
+CLAUDE.md
+docs/IMPLEMENTATION_PLAN.md
+docs/SESSIONS_PLAN.md
+
 # --- macOS archive artifact (ships inside the EarthStat zip) ---
 __MACOSX/
 
 # --- Derived analytic data ---
 # Large derived files are not committed; the pinned FAOSTAT snapshot and the
-# small analytic panel ARE (CLAUDE.md: derived analytic dataset committed).
+# small analytic panel ARE committed as the canonical analytic inputs.
 data/processed/*
 !data/processed/faostat_snapshot_*.parquet
 !data/processed/analytic_panel.parquet

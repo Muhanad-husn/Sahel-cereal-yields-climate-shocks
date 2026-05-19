@@ -1,7 +1,7 @@
 """Data loaders — FAOSTAT yields, CRU TS precip, GADM boundaries, cropland mask.
 
-This module owns ingestion and snapshot pinning. Per CLAUDE.md, FAOSTAT revises
-historical figures, so the main notebook reads a *pinned parquet snapshot*
+This module owns ingestion and snapshot pinning. FAOSTAT revises historical
+figures over time, so the main notebook reads a *pinned parquet snapshot*
 (``data/processed/faostat_snapshot_YYYY-MM-DD.parquet``) — never the raw CSV
 directly. ``load_faostat`` reads the raw CSV; ``write_faostat_snapshot`` pins it;
 ``load_faostat_snapshot`` is what downstream code (notebook) should call.
@@ -110,7 +110,7 @@ def write_faostat_snapshot(
     """Pin the current FAOSTAT extract to a dated parquet snapshot.
 
     Writes ``data/processed/faostat_snapshot_<access_date>.parquet``. This is an
-    explicit, documented re-fetch step (CLAUDE.md) — the notebook never calls it
+    explicit, documented re-fetch step — the notebook never calls it
     implicitly; it reads the snapshot via :func:`load_faostat_snapshot`.
     """
     df = load_faostat(csv_path)

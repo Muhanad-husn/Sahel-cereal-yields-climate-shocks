@@ -56,8 +56,8 @@ All access dates assumed **2026-05-19** (encoded into the FAOSTAT snapshot name)
 
 ## Out of scope (decided)
 
-- **MODIS NDVI** — dropped. Would require Google Earth Engine setup; CLAUDE.md
-  marks it "only if cheap" and it is not.
+- **MODIS NDVI** — dropped. Would require Google Earth Engine setup; the project
+  scope marks it "only if cheap to add" and it is not.
 
 ---
 

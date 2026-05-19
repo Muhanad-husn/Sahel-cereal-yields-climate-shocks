@@ -1,7 +1,8 @@
 """Diagnostic helpers — operationalize the five-part decision blocks.
 
-Per CLAUDE.md Principle 4 ("Show Your Work"), every meaningful data-processing
-decision is presented in five parts; part 2 is *diagnostic code that explores
+Under this project's "Show Your Work" decision discipline, every meaningful
+data-processing decision is presented in five parts; part 2 is *diagnostic code
+that explores
 the data to inform the choice*. These helpers are that diagnostic step,
 factored out so the notebook stays readable.
 

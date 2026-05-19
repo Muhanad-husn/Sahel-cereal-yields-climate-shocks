@@ -2,7 +2,7 @@
 
 This is the decision-discipline pattern for `02_main.ipynb` and
 `03_robustness.ipynb`. It is the **lab-work signal** that distinguishes a
-portfolio piece from a tutorial (CLAUDE.md Principle 4, "Show Your Work").
+portfolio piece from a tutorial — the project's "Show Your Work" discipline.
 
 ## When a decision block is required
 
