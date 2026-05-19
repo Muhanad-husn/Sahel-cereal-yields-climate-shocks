@@ -8,9 +8,11 @@ notebooks/_scratch/
 __MACOSX/
 
 # --- Derived analytic data ---
-# Large derived files are not committed; the pinned FAOSTAT snapshot IS.
+# Large derived files are not committed; the pinned FAOSTAT snapshot and the
+# small analytic panel ARE (CLAUDE.md: derived analytic dataset committed).
 data/processed/*
 !data/processed/faostat_snapshot_*.parquet
+!data/processed/analytic_panel.parquet
 
 # --- Python ---
 __pycache__/
